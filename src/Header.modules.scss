@@ -1,0 +1,96 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      width: 28px;
+      height: 32px;
+    }
+    .rightSide {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .fontSelect {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        padding-right: 16px;
+        border-right: 1px solid #e9e9e9;
+        font-weight: 700;
+        font-size: 14px;
+        position: relative;
+        p {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+          color: #2d2d2d;
+        }
+        .fontList {
+          padding: 15px;
+          background: #ffffff;
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+          border-radius: 16px;
+          position: absolute;
+          width: 75px;
+          z-index: 2;
+          left: 0px;
+          top: 40px;
+          ul {
+            list-style-type: none;
+            display: flex;
+            gap: 8px;
+            flex-direction: column;
+            padding-left: 0;
+          }
+        }
+      }
+      .darkMode {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+    }
+  }
+  header.dark {
+    color: #ffffff;
+    .rightSide {
+      .fontSelect {
+        p {
+          color: #ffffff;
+        }
+        .fontList {
+          background: #1f1f1f;
+          box-shadow: 0px 5px 30px #a445ed;
+          li {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .fontSelect {
+      font-size: 18px !important;
+      p {
+        font-size: 18px !important;
+      }
+      cursor: pointer;
+      .fontList {
+        width: 133px !important;
+        padding: 24px !important;
+        gap: 1rem !important;
+        left: -95px !important;
+        ul {
+          gap: 16px !important;
+          li {
+            font-size: 18px !important;
+            line-height: 24px !important;
+            cursor: pointer;
+            &:hover {
+              color: #a445ed !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+}
+body {
+  .mainWrapper {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-height: 100vh;
+  }
+  .mainWrapper.dark {
+    background: #050505;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .mainWrapper {
+    padding: 58px 352px 123px 351px !important;
+  }
+}
